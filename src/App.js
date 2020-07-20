@@ -4,9 +4,18 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div className='app'>
-      <h1>Hello World</h1>
-    </div>
+    <Router>
+      <div className='app'>
+        <Switch>
+          <Route path='/checkout'>
+            <h1>Checkout</h1>
+          </Route>
+          <Route path='/login'>
+            <h1>Login</h1>
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
