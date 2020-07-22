@@ -1,6 +1,7 @@
 import React from "react";
 import "../style/header.css";
 import { Link } from "react-router-dom";
+import SearchIcon from "@material-ui/icons/Search";
 
 function Header() {
   return (
@@ -13,7 +14,10 @@ function Header() {
         />
       </Link>
 
-      <input type='text' className='header__searchInput' />
+      <div className='header__search'>
+        <input type='text' className='header__searchInput' />
+        <SearchIcon className='header__searchIcon' />
+      </div>
     </nav>
   );
 }
